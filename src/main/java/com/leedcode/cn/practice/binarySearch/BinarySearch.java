@@ -43,7 +43,7 @@ public class BinarySearch {
         return -1;
     }
 
-    //  在排序数组中查找元素的第⼀个和最后⼀个位置
+    //  34. 在排序数组中查找元素的第⼀个和最后⼀个位置
 
     public static int[] searchRange(int[] nums, int target) {
         return new int[]{left_bound(nums, target), right_bound(nums, target)};
@@ -95,4 +95,7 @@ public class BinarySearch {
         }
         return left;
     }
+
+
+
 }
