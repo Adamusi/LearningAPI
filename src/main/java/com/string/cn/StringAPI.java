@@ -19,6 +19,7 @@ public class StringAPI {
 
 
         public static void main(String[] args) {
+
             StringAPI s = new StringAPI();
             s.change(s.str1, s.ch);
             System.out.println(s.str1);// 123
