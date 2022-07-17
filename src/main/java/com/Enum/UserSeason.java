@@ -8,6 +8,9 @@ package com.Enum;
  * @version: 1.0
  */
 
+import com.alibaba.fastjson.JSONObject;
+import com.exception.CommonErrorCode;
+
 /**枚举类型的应用场景
  *
  * 将英文的季节转换成中文季节
@@ -40,7 +43,8 @@ class UseSeason {
         // 枚举遍历
         for (Season s : Season.values()) {
             if (s.getCode() == index) {
-                System.out.println(getChineseSeason(s));
+                System.out.println(JSONObject.toJSON( getChineseSeason(s)));
+
             }
         }
     }
@@ -48,5 +52,7 @@ class UseSeason {
     public static void main(String[] args) {
         UseSeason useSeason = new UseSeason();
         useSeason.doSomething(1);
+        System.out.println(ChangeStateEnum.ADD);
+        System.out.println(CommonErrorCode.E_100101);
     }
 }

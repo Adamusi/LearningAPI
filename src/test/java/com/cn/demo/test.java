@@ -1,5 +1,7 @@
 package com.cn.demo;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
 
 import java.util.*;
@@ -46,6 +48,8 @@ public class test {
         System.out.println(innercodeList);
         List<String> innercodeList2 = new ArrayList<>(path);
         System.out.println(innercodeList2);
+
+        System.out.println("deptList:"+ JSONObject.toJSONString(user));
     }
 
 }
