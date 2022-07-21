@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  * @author： lenovo
  * @date： 2022/1/27 10:03
  * @modifiedBy：访问路径 http://localhost:8080/user?userParams='zz'
- * @description：
+ * @description： http://localhost:8080/test/conf
  * @version: 1.0
  */
 /**
