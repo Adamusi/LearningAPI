@@ -1,6 +1,7 @@
 package com.SpringBoot.Config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Component;
 
     @Component
     @ConfigurationProperties(prefix = "cn.com.my")
+
 
     public class ConfProperty {
         private String test1;
