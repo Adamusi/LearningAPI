@@ -181,15 +181,46 @@ public class MapAPITest {
 
     }
 
-
     @Test
-    public void listToMap() {
-        //Map<Integer, Animal> map = list.stream()
-        //.collect(Collectors.toMap(Animal::getId, Function.identity()));
-        //可以直接通过Maps 类创建一个HashMap：
-        Map<String, String> map = Maps.newHashMapWithExpectedSize(7);
+    public void test3() {
+        Map<String, String> map3 = new HashMap<String, String>();
+
+        map3.put("A", "A");
+
+        map3.put("B", "B");
+
+        map3.put("C", "C");
+
+        map3.put("D", "D");
+
+        map3.put("E", "A");
+        map3.put("E", "3");
+
+        System.out.println(map3);
+
+        //获取所有的key
+        Set<String> keySet = map3.keySet();
+        //使用增强for循环遍历
+        //使用迭代器遍历
+        Iterator<String> iterator = keySet.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next().equals("A")) {
+                iterator.remove();
+                System.out.println(map3);
+            }
+        }
     }
 
 }
+    //
+    //@Test
+    //public void listToMap() {
+    //    //Map<Integer, Animal> map = list.stream()
+    //    //.collect(Collectors.toMap(Animal::getId, Function.identity()));
+    //    //可以直接通过Maps 类创建一个HashMap：
+    //    Map<String, String> map = Maps.newHashMapWithExpectedSize(7);
+    //}
+
+
 
 
