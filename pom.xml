@@ -102,7 +102,6 @@
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <!-- 这个插件，可以将应用打包成一个可执行的jar包；-->
@@ -120,4 +119,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
